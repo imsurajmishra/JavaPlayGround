@@ -1,3 +1,7 @@
+package DebugExcercise;
+
+import DebugExcercise.Status;
+
 public class TODO {
 
     private int userId;
@@ -48,7 +52,7 @@ public class TODO {
 
     @Override
     public String toString() {
-        return "TODO{" +
+        return "DebugExcercise.TODO{" +
                 "userId=" + userId +
                 ", id=" + id +
                 ", title='" + title + '\'' +

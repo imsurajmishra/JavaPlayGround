@@ -1,3 +1,5 @@
+package DebugExcercise;
+
 import org.junit.Assert;
 
 public class DebugExercise {
