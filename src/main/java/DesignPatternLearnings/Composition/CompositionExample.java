@@ -20,11 +20,14 @@ public class CompositionExample {
 
         // read file
         Function<String, List<String>> fileRead = CompositionExample::FileRead;
+
         // validate records
-        Predicate<String> isEmptyOrNull = (a) -> a == null && a.isEmpty();
+        Predicate<String> isEmptyOrNull = (a) -> a == null || a.isEmpty();
         Function<List<String>,  List<String>> validate = (a) -> validateRecords(a, isEmptyOrNull);
+
         // compute metrics
         Function<List<String>, Map<String, Long>> computeOccurence = CompositionExample::computeOccurence;
+
         // write to local file
         Function<Map<String, Long>, Boolean> writeToLocal = CompositionExample::write;
 
